@@ -1,0 +1,5 @@
+127.0.0.1 - - [09/Sep/2026 15:47:31] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [09/Sep/2026 15:47:31] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Sep/2026 15:47:31] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Sep/2026 15:47:31] "GET /menu.json HTTP/1.1" 200 -
+127.0.0.1 - - [09/Sep/2026 15:47:31] "GET /assets/img/churro-classico.jpg HTTP/1.1" 200 -
