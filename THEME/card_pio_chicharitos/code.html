@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100..900&family=Literata:wght@100..900&display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-low": "#f7f3ea", "on-tertiary": "#ffffff", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#6c3a01", "secondary-fixed-dim": "#ffb778", "surface-tint": "#7c5641", "inverse-on-surface": "#f4f0e7", "primary": "#412311", "outline": "#83746d", "on-primary-fixed-variant": "#623e2b", "tertiary-fixed-dim": "#d9c4a5", "on-error-container": "#93000a", "surface-variant": "#e6e2d9", "inverse-surface": "#31302b", "secondary": "#885119", "primary-fixed": "#ffdbca", "on-secondary-fixed": "#2e1500", "surface-dim": "#dddad1", "tertiary-fixed": "#f6dfc0", "on-secondary-container": "#78440b", "on-primary-fixed": "#2f1405", "secondary-container": "#fdb473", "background": "#fdf9f0", "on-primary": "#ffffff", "error": "#ba1a1a", "on-tertiary-container": "#bda98c", "on-surface": "#1c1c16", "inverse-primary": "#eebca2", "on-surface-variant": "#50443e", "on-error": "#ffffff", "secondary-fixed": "#ffdcc1", "on-background": "#1c1c16", "surface-container-highest": "#e6e2d9", "surface-container": "#f1eee5", "primary-fixed-dim": "#eebca2", "tertiary": "#342814", "on-tertiary-fixed-variant": "#53452e", "outline-variant": "#d5c3bb", "surface-container-high": "#ece8df", "on-primary-container": "#d2a289", "surface": "#fdf9f0", "on-secondary": "#ffffff", "primary-container": "#5a3825", "on-tertiary-fixed": "#251a07", "tertiary-container": "#4c3e28", "surface-bright": "#fdf9f0", "error-container": "#ffdad6" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-2xl": "2rem", "space-md": "1rem", "space-3xl": "2.5rem", "margin-mobile": "1rem", "space-lg": "1.25rem", "margin-desktop": "2.5rem", "space-xl": "1.5rem", "space-2xs": "0.25rem", "gutter-desktop": "1.5rem", "space-xs": "0.5rem", "gutter-mobile": "1rem", "space-sm": "0.75rem" }, "fontFamily": { "label-lg": ["Epilogue"], "body-md": ["Literata"], "headline-lg": ["Epilogue"], "body-sm": ["Literata"], "label-md": ["Epilogue"], "body-lg": ["Literata"], "display-lg": ["Epilogue"], "headline-md": ["Epilogue"], "display-mobile": ["Epilogue"], "label-sm": ["Epilogue"], "headline-sm": ["Epilogue"] }, "fontSize": { "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "700" }], "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-lg": ["17px", { "lineHeight": "26px", "fontWeight": "400" }], "display-lg": ["34px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "700" }], "display-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "800" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "700" }], "headline-sm": ["16px", { "lineHeight": "22px", "fontWeight": "600" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#fdf9f0;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col antialiased"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(90,56,37,0.06)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><div class="relative flex-shrink-0"><span class="flex h-2.5 w-2.5 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span></span></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary truncate leading-tight">Chicharitos Churros</span><span class="hidden">Cardápio</span></div><span class="font-label-sm text-label-sm text-secondary truncate">Aberto agora • 15-25 min</span></div></div><div class="flex items-center gap-space-xs"><a class="relative w-11 h-11 flex items-center justify-center rounded-full text-primary hover:bg-surface-container-high transition-colors" data-path="carrinho" href="#"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="absolute top-1.5 right-1.5 min-w-[18px] h-[18px] px-1 bg-secondary text-on-secondary rounded-full font-label-sm text-label-sm flex items-center justify-center">2</span></a><div class="w-8 h-8 rounded-full ring-1 ring-outline-variant overflow-hidden flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XLtp8vd4gap75bh4X7zYlWuFn1QrJVumtx_PBULfSOtNmryrcwEJnbQeb-PFIfTmJ0T1g42jZjB9ShI54SaUta4nVt0mVxQ0dzUzyUn_W9OtNEgpiQJWjVHQdkVY9XRNR2X7w1vfOyKdJZQGvWQPw-ahxQD6SZIZ0DaPb9-mRVv9vqeT7hbPNnSTf_LcsOTFFUMa0oNWzp_UUqAfPe69NEZAn0RA_9Az68Bg9GS_jrjJpQxZ6TPycyPq9DNdp1J_IOh8-e7exY0A"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full">
+<!-- Brand Hero Showcase Banner -->
+<section class="px-margin-mobile pt-space-xs pb-space-sm">
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-primary via-primary-container to-secondary text-surface p-space-md shadow-md">
+<!-- Decorative background glow and texture -->
+<div class="absolute -right-8 -bottom-10 w-44 h-44 rounded-full bg-secondary-container/20 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex items-center gap-space-md">
+<div class="flex-1 min-w-0">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface/15 backdrop-blur-md mb-2">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">auto_awesome</span>
+<span class="font-label-sm text-label-sm text-surface uppercase tracking-wider">Feito na Hora</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-surface font-extrabold leading-tight tracking-tight">
+            Crocantes por fora, macios por dentro.
+          </h1>
+<p class="mt-1 font-body-sm text-body-sm text-tertiary-fixed line-clamp-2 leading-snug">
+            Massa artesanal dourada no ponto perfeito, com recheios generosos e indulgentes.
+          </p>
+</div>
+<div class="w-24 h-24 flex-shrink-0 relative rounded-xl overflow-hidden bg-primary shadow-inner">
+<img alt="Mascote Chicharitos Churros" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuJX_uHqPQyMmvsqTErWvV_KczgTTDbH481QKMfHLRZ61-wEq2i4rRBn-DUp9lZjEIfui_cap-JrFLNraPYR2KpDU7nTcUScZ_k9DpWhaedjBwARqsYn0CEB_S-HlKQcQcbzM4i2yjPN5T2OvjCyEY_SebKOA5VzIlfxqpKKOir94a8QNlwGLtHIpll6vC6V2i_8l5nskFkAMG0jObBzuZgwwfNba5D_RlJ2PH7cXqPyJeQ16zgPpVyNcMzWr3AmIQmA"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Horizontal Category Filters (Pills) -->
+<section class="sticky top-16 z-30 bg-surface/95 backdrop-blur-md py-space-xs shadow-sm">
+<div class="flex items-center gap-space-xs overflow-x-auto px-margin-mobile no-scrollbar py-1" id="categoryTabs">
+<button class="category-btn active px-4 py-2 rounded-full font-label-md text-label-md flex items-center gap-1.5 whitespace-nowrap bg-primary text-surface shadow-sm transition-all duration-200" data-cat="todos" type="button">
+<span class="material-symbols-outlined text-[18px]">restaurant_menu</span>
+        Todos
+      </button>
+<button class="category-btn px-4 py-2 rounded-full font-label-md text-label-md flex items-center gap-1.5 whitespace-nowrap bg-surface-container-high text-primary hover:bg-surface-variant transition-all duration-200" data-cat="classicos" type="button">
+<span class="material-symbols-outlined text-[18px]">bakery_dining</span>
+        Churros Clássicos
+      </button>
+<button class="category-btn px-4 py-2 rounded-full font-label-md text-label-md flex items-center gap-1.5 whitespace-nowrap bg-surface-container-high text-primary hover:bg-surface-variant transition-all duration-200" data-cat="especiais" type="button">
+<span class="material-symbols-outlined text-[18px]">stars</span>
+        Churros Especiais
+      </button>
+<button class="category-btn px-4 py-2 rounded-full font-label-md text-label-md flex items-center gap-1.5 whitespace-nowrap bg-surface-container-high text-primary hover:bg-surface-variant transition-all duration-200" data-cat="combos" type="button">
+<span class="material-symbols-outlined text-[18px]">celebration</span>
+        Combos
+      </button>
+<button class="category-btn px-4 py-2 rounded-full font-label-md text-label-md flex items-center gap-1.5 whitespace-nowrap bg-surface-container-high text-primary hover:bg-surface-variant transition-all duration-200" data-cat="bebidas" type="button">
+<span class="material-symbols-outlined text-[18px]">local_cafe</span>
+        Bebidas
+      </button>
+</div>
+</section>
+<!-- Product Catalog Grid -->
+<section class="px-margin-mobile pt-space-md pb-space-3xl">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">local_fire_department</span>
+<h2 class="font-headline-sm text-headline-sm text-primary" id="currentSectionTitle">Mais Pedidos & Novidades</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="itemCountLabel">8 opções artesanais</span>
+</div>
+<div class="grid grid-cols-1 gap-space-md" id="productGrid">
+<!-- Item 1: Churro Clássico -->
+<article class="product-card bg-surface-container-lowest rounded-xl p-space-sm flex gap-space-sm shadow-sm hover:shadow-md transition-shadow duration-200" data-cat="classicos">
+<div class="w-28 h-28 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Close-up gourmet photography of warm golden traditional churros rolled in fragrant cinnamon and crystalline sugar, golden brown crispy ridges, soft morning light in an artisanal bakery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaFo-2Y0HnSORXxz98q9PajuW75lE3oNMoFlFW8pBoCB1lyRcCvrdLuSjd6tW2-lH6frrvSD2_voR3Rjm7R8BYd3XohToyIfKzFB1z7nAT4zafzqFOppe_ZRIyI0SrBAJLWTc-cLyESClmX4eaPYno9c7fiZzIIiLcJE66rax0at8hBOgvELG8Fo00-uMHHKzN5YMK0rt5NogeWSYUF6pSUhFTxpUTe9Ips95EUjdGTbyDjqIN0VBd"/>
+<span class="absolute top-1.5 left-1.5 bg-surface/90 backdrop-blur-xs text-primary font-label-sm text-[10px] px-1.5 py-0.5 rounded-full font-semibold">Tradicional</span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary truncate">Churro Clássico</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">Polvilhado generosamente com açúcar cristal e canela aromática fresca.</p>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">A partir de</span>
+<span class="font-label-lg text-label-lg text-secondary font-bold">R$ 6,00</span>
+</div>
+<button class="h-9 px-3 rounded-full bg-primary text-surface font-label-md text-label-md flex items-center gap-1 hover:bg-primary-container active:scale-95 transition-all shadow-sm" onclick="openProductModal('Churro Clássico', 6.00, 'Açúcar cristal e canela aromática fresca.')" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Adicionar</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Item 2: Churro de Doce de Leite -->
+<article class="product-card bg-surface-container-lowest rounded-xl p-space-sm flex gap-space-sm shadow-sm hover:shadow-md transition-shadow duration-200" data-cat="classicos">
+<div class="w-28 h-28 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Artisanal crispy churro cut horizontally overflowing with rich, glossy caramel dulce de leche, warm golden tones, bakery kitchen setting with caramel swirls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVMX224DTsLI2vfwN5b9uSV_FQQOQUInaa7bxRkkNOYmLNQuUtE_8rd8JmsQsXZZPW0Jtr-INvynqTrHsJXsb3peL4UuTyR_a4EopECcwdmfNDahHLChIaQq5Is_FTV0YMejqQu1cY-Ik75AHii2rUexk_PdBqWoc7m-jHyS27TBQbTUIFz9xAs6BQ-GbU7LjBZ8ycwOshOZAfPlv9-s8oWeUWyIKbF9Z7RTd1ljV70apYna22ayUL"/>
+<span class="absolute top-1.5 left-1.5 bg-secondary text-surface font-label-sm text-[10px] px-1.5 py-0.5 rounded-full font-semibold">Campeão</span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary truncate">Doce de Leite Artesanal</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">Recheio denso e cremoso de doce de leite cozido lentamente no tacho.</p>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Preço</span>
+<span class="font-label-lg text-label-lg text-secondary font-bold">R$ 8,00</span>
+</div>
+<button class="h-9 px-3 rounded-full bg-primary text-surface font-label-md text-label-md flex items-center gap-1 hover:bg-primary-container active:scale-95 transition-all shadow-sm" onclick="openProductModal('Churro de Doce de Leite', 8.00, 'Recheio cremoso e aveludado de doce de leite tradicional.')" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Adicionar</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Item 3: Churro de Chocolate -->
+<article class="product-card bg-surface-container-lowest rounded-xl p-space-sm flex gap-space-sm shadow-sm hover:shadow-md transition-shadow duration-200" data-cat="classicos">
+<div class="w-28 h-28 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Fresh hot churro filled with silky melted milk chocolate ganache dripping decadent sauce, roasted cocoa beans in the warm rustic background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvoYHrPTl78tjbi1vkC4q69lCGQ6Lq-wFj3ipZFH_KAK7yxzuQN4_JMkEd2jhG_MerrNiGREw9TCyFf7i2_WEztUSpHGj1JtT-IrtOzJk73zCIOcbpVG0VbmqQ8VXWRomkE9ZDVW0Tvdi6DVYnSIW9M591BCrWEKYRHh-gZjLPbqzkKCNEPTWTPpTpK6P0fFEwN5hZ02K_X3xsZu3XKicJQ24TU8Tq6YPUKvV4I0S2LXmyoMgBbkmd"/>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary truncate">Churro de Chocolate</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">Recheado com chocolate ao leite cremoso e aveludado de alta confeitaria.</p>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Preço</span>
+<span class="font-label-lg text-label-lg text-secondary font-bold">R$ 8,00</span>
+</div>
+<button class="h-9 px-3 rounded-full bg-primary text-surface font-label-md text-label-md flex items-center gap-1 hover:bg-primary-container active:scale-95 transition-all shadow-sm" onclick="openProductModal('Churro de Chocolate', 8.00, 'Chocolate ao leite cremoso e aveludado.')" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Adicionar</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Item 4: Romeu e Julieta -->
+<article class="product-card bg-surface-container-lowest rounded-xl p-space-sm flex gap-space-sm shadow-sm hover:shadow-md transition-shadow duration-200" data-cat="especiais">
+<div class="w-28 h-28 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Gourmet filled churro sliced open showing layers of melted white cheese and rich ruby-red guava paste, Latin American dessert aesthetic, natural soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwZxXiwfvyR6buBrKap6-hdoo-WiTMQIYiEkX0A0h0sEuNYMHlKgunl3qv0RkkGz6P_fQ1VoBWOIQ8CDNNgOB9sU2DnTDo5lqieLUEGoT5wDGeQVjdq7h5zs1fXOpVgWCKKOweUhBodrUM7hBWkkNXtNMZGnVWRC9bUAhA0KK0XiU2Vp9ITBc14lDfRkghV5xHHmexLuhHfg9iF5bQvF-jNlLER6uevkZIyRNhy9AKw1eu7ojIKJQ_"/>
+<span class="absolute top-1.5 left-1.5 bg-tertiary text-on-tertiary font-label-sm text-[10px] px-1.5 py-0.5 rounded-full font-semibold">Especial</span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary truncate">Romeu & Julieta</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">O contraste perfeito do queijo minas cremoso com goiabada cascão artesanal.</p>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Preço</span>
+<span class="font-label-lg text-label-lg text-secondary font-bold">R$ 9,00</span>
+</div>
+<button class="h-9 px-3 rounded-full bg-primary text-surface font-label-md text-label-md flex items-center gap-1 hover:bg-primary-container active:scale-95 transition-all shadow-sm" onclick="openProductModal('Romeu e Julieta', 9.00, 'Queijo minas suave combinado com goiabada cascão artesanal.')" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Adicionar</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Item 5: Churro de Nutella -->
+<article class="product-card bg-surface-container-lowest rounded-xl p-space-sm flex gap-space-sm shadow-sm hover:shadow-md transition-shadow duration-200" data-cat="especiais">
+<div class="w-28 h-28 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Crispy churros generously stuffed and drizzled with authentic hazelnut cocoa spread Nutella, decorated with chopped toasted hazelnuts on parchment paper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsUouGHUCjj-aOTIyFjHmAzzdsNgapRQB3tJyLFuDGCI__HPI7ey74uGI58WZ4znTgaIpLGpInKV8NZpxI7AKE9TMxL8jZ_Ltz62lXy-_VD4I1jJkDqjbwNOsBgpd9I9K_3DSodocNfzEfW-_U1Qp9ufc30TDiuzmMEkC11vjlm7ngzzAM1tGEkqtSFta7dg2aJCwbFmAN31SAiGSEzxhIwV_ttrMUAcMIp452L0zrsB0uOISzg_Zx"/>
+<span class="absolute top-1.5 left-1.5 bg-secondary-container text-on-secondary-container font-label-sm text-[10px] px-1.5 py-0.5 rounded-full font-bold">Premium</span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary truncate">Churro de Nutella</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">Recheio farto de Nutella pura com cobertura extra de avelã triturada.</p>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Preço</span>
+<span class="font-label-lg text-label-lg text-secondary font-bold">R$ 12,00</span>
+</div>
+<button class="h-9 px-3 rounded-full bg-primary text-surface font-label-md text-label-md flex items-center gap-1 hover:bg-primary-container active:scale-95 transition-all shadow-sm" onclick="openProductModal('Churro de Nutella', 12.00, 'Recheado abundantemente com Nutella pura.')" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Adicionar</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Item 6: Churro Oreo -->
+<article class="product-card bg-surface-container-lowest rounded-xl p-space-sm flex gap-space-sm shadow-sm hover:shadow-md transition-shadow duration-200" data-cat="especiais">
+<div class="w-28 h-28 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Modern gourmet churro filled with cookies and cream vanilla frosting and covered in black cocoa biscuit crumble Oreo pieces, studio dark warm tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb7gMjdn88SFj0GfX9KgI9LyCkU41nrENlKX0TShAzMGkOB4vXlAPG3ahOaHO4hP0VKJ2NsqZEgDoStk6Itv-IDBcjVnKjapc4sZTTOLeeKuHhMP6qrccWqejC7j_JDB3-rVxPXRIhPVrv5d7Ns88A26nlJZ7Kd5I2Fu8EC3HyHxTVYgNLrfDNrE1mDEvH0C0Lk_oIixwtnlQiQ_0GanZ-Po09eSx_SgeifCcRTrKnB96RvWhBC67P"/>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary truncate">Churro Oreo® Lovers</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">Creme artesanal de baunilha com pedacinhos crocantes de biscoito Oreo.</p>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Preço</span>
+<span class="font-label-lg text-label-lg text-secondary font-bold">R$ 11,00</span>
+</div>
+<button class="h-9 px-3 rounded-full bg-primary text-surface font-label-md text-label-md flex items-center gap-1 hover:bg-primary-container active:scale-95 transition-all shadow-sm" onclick="openProductModal('Churro Oreo', 11.00, 'Creme de Oreo crocante com biscoitos triturados.')" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Adicionar</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Item 7: Combo Casal -->
+<article class="product-card bg-surface-container-lowest rounded-xl p-space-sm flex gap-space-sm shadow-sm hover:shadow-md transition-shadow duration-200" data-cat="combos">
+<div class="w-28 h-28 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Top-down platter of assorted golden churros served with small ceramic dipping bowls of warm chocolate and dulce de leche, designed for sharing, cozy cafe table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOePRcptNOk2USAGDOhaGhyfFtfpDwu4dcC2g7hJQ25hTf4JoDSkcABf69uTpxbTXbvKXABquzLtlrO23li--di1WUdRepzxXRw929x5wNO6s4wSaivV6c6YSulOyclh1WiHLBra6JnggdIrSM6liSWB9Tn1-A1032UE793CxJv9X9YXkBpPgozAYKmMcYymF4uCjgHr1BybnK95HW5qi4zVpTmUiR4izreeMtLdIfjKgL9mmJZ-0C"/>
+<span class="absolute top-1.5 left-1.5 bg-secondary text-surface font-label-sm text-[10px] px-1.5 py-0.5 rounded-full font-bold">Combo</span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary truncate">Combo Casal Queridinho</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">4 churros clássicos + 2 especiais da sua escolha com pote extra de doce.</p>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Econômico</span>
+<span class="font-label-lg text-label-lg text-secondary font-bold">R$ 32,00</span>
+</div>
+<button class="h-9 px-3 rounded-full bg-primary text-surface font-label-md text-label-md flex items-center gap-1 hover:bg-primary-container active:scale-95 transition-all shadow-sm" onclick="openProductModal('Combo Casal', 32.00, '4 clássicos + 2 especiais selecionados para compartilhar.')" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Adicionar</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Item 8: Combo Mini 10 un. -->
+<article class="product-card bg-surface-container-lowest rounded-xl p-space-sm flex gap-space-sm shadow-sm hover:shadow-md transition-shadow duration-200" data-cat="combos">
+<div class="w-28 h-28 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Rustic paper box filled with ten crispy mini finger churros dusted with sugar, next to two dipping cups of dulce de leche and melted dark chocolate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApazensYJwXsoPG7fKiy0FWdEe6iaIxLw3fRmgcEeOAIsYg1I4NVZLQFI8uDDIXDxEpayIlo6n2iXcyBJz6XtWL2ZZWinvPYLaY9noei3lU1nd6J6WAbMs-mKr7R9IEKF8jFboPDFJGv0RzyD3QzDtA7LcR_E4tmCI-yUx0q649uXl6B76fZozGYsvVrVXejXTv4pbjABDhQkuNY2Dnq9JrGqMnwsZBBM7dVx2miHjHEqtqRntxQlT"/>
+<span class="absolute top-1.5 left-1.5 bg-primary text-surface font-label-sm text-[10px] px-1.5 py-0.5 rounded-full font-bold">10 unidades</span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary truncate">Caixinha Mini 10 un.</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">10 mini churros crocantes para chuchar em até 2 potinhos de calda à escolha.</p>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Preço</span>
+<span class="font-label-lg text-label-lg text-secondary font-bold">R$ 20,00</span>
+</div>
+<button class="h-9 px-3 rounded-full bg-primary text-surface font-label-md text-label-md flex items-center gap-1 hover:bg-primary-container active:scale-95 transition-all shadow-sm" onclick="openProductModal('Combo Mini 10 un.', 20.00, '10 mini churros sequinhos para mergulhar em caldas cremosas.')" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Adicionar</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Item 9: Bebida - Chocolate Quente Espanhol -->
+<article class="product-card bg-surface-container-lowest rounded-xl p-space-sm flex gap-space-sm shadow-sm hover:shadow-md transition-shadow duration-200" data-cat="bebidas">
+<div class="w-28 h-28 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Thick and steamy Spanish hot chocolate in a ceramic mug, ultra thick creamy texture suitable for dipping, chocolate flakes on wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBy8qVaR-nRXQoPpCP8x_qVxmrgpFQa39pRLRDKnTfCf-mDxyVpe7uvSzMwhc6yytTsizIBfuoj0Q-0H5h5wmzoBJEZyAVdp6J82oc9mTO044PMYDvChtsEOIc4BAVNueegOOaO1EJa7EplujjU2JO3sYocpG36jV4QPa6Q7mYdBUAmqM2-nbbAnrpsAULsXMs5PnhBUN_T5oBBq-gdtvT3oBcs5hIehhiGOkGPZbvpbrZFNefWodk"/>
+<span class="absolute top-1.5 left-1.5 bg-surface/90 text-primary font-label-sm text-[10px] px-1.5 py-0.5 rounded-full font-semibold">Bebida</span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary truncate">Chocolate Espanhol</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">Espesso, encorpado e aveludado, ideal para mergulhar o churro quentinho.</p>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Copo 240ml</span>
+<span class="font-label-lg text-label-lg text-secondary font-bold">R$ 10,00</span>
+</div>
+<button class="h-9 px-3 rounded-full bg-primary text-surface font-label-md text-label-md flex items-center gap-1 hover:bg-primary-container active:scale-95 transition-all shadow-sm" onclick="openProductModal('Chocolate Quente Espanhol', 10.00, 'Chocolate quente cremoso e espesso ao estilo de Madrid.')" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Adicionar</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Floating Sticky Cart Summary Drawer (visible when items > 0) -->
+<div class="fixed bottom-16 inset-x-0 z-40 p-margin-mobile pointer-events-none transition-all duration-300 transform translate-y-24 opacity-0" id="stickyCartBar">
+<a class="pointer-events-auto flex items-center justify-between bg-primary text-surface p-3.5 rounded-full shadow-xl hover:bg-primary-container active:scale-[0.98] transition-all" data-path="carrinho" href="#/cart">
+<div class="flex items-center gap-3">
+<div class="relative w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-surface shadow-inner">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+<span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-surface text-primary font-label-sm text-[10px] flex items-center justify-center font-bold" id="floatingCartBadge">0</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-tertiary-fixed leading-tight">Ver sacola</span>
+<span class="font-headline-sm text-headline-sm text-surface font-bold leading-tight" id="floatingCartTotal">R$ 0,00</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 font-label-md text-label-md pr-2">
+<span>Finalizar</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</div>
+</a>
+</div>
+<!-- Customization Modal (Bottom Sheet / Overlay) -->
+<div class="fixed inset-0 z-50 flex items-end justify-center bg-inverse-surface/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300" id="productModal">
+<div class="w-full max-w-lg bg-surface-bright rounded-t-2xl p-space-md shadow-2xl transform translate-y-full transition-transform duration-300 max-h-[85vh] flex flex-col" id="modalContainer">
+<!-- Modal Header -->
+<div class="flex items-start justify-between pb-space-xs border-none">
+<div class="flex-1 pr-2">
+<h3 class="font-headline-md text-headline-md text-primary font-bold" id="modalItemTitle">Personalize seu Churro</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5" id="modalItemDesc">Selecione complementos artesanais para deixar seu pedido perfeito.</p>
+</div>
+<button class="w-9 h-9 flex items-center justify-center rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-variant transition-colors" onclick="closeProductModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Scrollable Customization Content -->
+<div class="overflow-y-auto flex-1 py-space-sm space-y-space-md no-scrollbar">
+<!-- Complementos Section -->
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-md text-label-md text-primary uppercase tracking-wide">Adicionar Complementos</span>
+<span class="font-label-sm text-label-sm text-outline">Opcional</span>
+</div>
+<div class="space-y-2" id="addonsList">
+<!-- Morango -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<input class="addon-checkbox w-5 h-5 rounded accent-secondary text-surface" data-name="Morango Fresco" data-price="2.00" onchange="updateModalTotal()" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface font-medium">Morango Fresco em Pedaços</span>
+</div>
+<span class="font-label-md text-label-md text-secondary">+ R$ 2,00</span>
+</label>
+<!-- Granulado -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<input class="addon-checkbox w-5 h-5 rounded accent-secondary text-surface" data-name="Granulado Belga" data-price="1.00" onchange="updateModalTotal()" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface font-medium">Granulado Belga Crocante</span>
+</div>
+<span class="font-label-md text-label-md text-secondary">+ R$ 1,00</span>
+</label>
+<!-- Paçoca -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<input class="addon-checkbox w-5 h-5 rounded accent-secondary text-surface" data-name="Farofa de Paçoca" data-price="1.50" onchange="updateModalTotal()" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface font-medium">Farofa Doce de Paçoca</span>
+</div>
+<span class="font-label-md text-label-md text-secondary">+ R$ 1,50</span>
+</label>
+<!-- Chantilly -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<input class="addon-checkbox w-5 h-5 rounded accent-secondary text-surface" data-name="Chantilly Fresco" data-price="2.00" onchange="updateModalTotal()" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface font-medium">Chantilly Aerado Fresco</span>
+</div>
+<span class="font-label-md text-label-md text-secondary">+ R$ 2,00</span>
+</label>
+<!-- Leite Ninho -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<input class="addon-checkbox w-5 h-5 rounded accent-secondary text-surface" data-name="Leite Ninho Polvilhado" data-price="2.50" onchange="updateModalTotal()" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface font-medium">Leite Ninho Polvilhado</span>
+</div>
+<span class="font-label-md text-label-md text-secondary">+ R$ 2,50</span>
+</label>
+<!-- Nutella Extra -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<input class="addon-checkbox w-5 h-5 rounded accent-secondary text-surface" data-name="Nutella Pura Extra" data-price="4.00" onchange="updateModalTotal()" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface font-medium">Dose Extra de Nutella Pura</span>
+</div>
+<span class="font-label-md text-label-md text-secondary">+ R$ 4,00</span>
+</label>
+</div>
+</div>
+<!-- Observações do Pedido -->
+<div>
+<label class="block font-label-md text-label-md text-primary mb-1" for="orderNotes">Observações especiais</label>
+<textarea class="w-full rounded-xl bg-surface-container-low p-3 font-body-sm text-body-sm text-primary placeholder-on-surface-variant/50 focus:outline-none focus:bg-surface-container resize-none transition-colors" id="orderNotes" placeholder="Ex: Bem quentinho, canela extra, embalar separadamente..." rows="2"></textarea>
+</div>
+</div>
+<!-- Modal Footer with Stepper and Action Button -->
+<div class="pt-space-sm flex items-center gap-space-sm border-none">
+<div class="flex items-center justify-between bg-surface-container-low rounded-full p-1 w-32 shadow-inner">
+<button class="w-8 h-8 rounded-full bg-surface-bright flex items-center justify-center text-primary hover:bg-surface-variant active:scale-95 transition-all" onclick="decreaseQuantity()" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="font-label-lg text-label-lg text-primary font-bold" id="modalQuantity">1</span>
+<button class="w-8 h-8 rounded-full bg-surface-bright flex items-center justify-center text-primary hover:bg-surface-variant active:scale-95 transition-all" onclick="increaseQuantity()" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<button class="flex-1 h-12 rounded-full bg-primary text-surface font-label-lg text-label-lg flex items-center justify-between px-space-md shadow-md hover:bg-primary-container active:scale-[0.98] transition-all" id="confirmAddToCartBtn" onclick="confirmAddToCart()" type="button">
+<span class="font-bold">Adicionar</span>
+<span class="font-bold text-secondary-fixed" id="modalFinalPriceText">R$ 0,00</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Current Active Item State for Modal
+    let currentItem = {
+      name: '',
+      basePrice: 0,
+      description: '',
+      quantity: 1
+    };
+
+    const CART_KEY = 'churros_cart_v1';
+
+    // Local Storage Cart Helper
+    function getCart() {
+      try {
+        const stored = localStorage.getItem(CART_KEY);
+        return stored ? JSON.parse(stored) : [];
+      } catch (e) {
+        return [];
+      }
+    }
+
+    function saveCart(cart) {
+      try {
+        localStorage.setItem(CART_KEY, JSON.stringify(cart));
+      } catch (e) {}
+      syncFloatingCart();
+    }
+
+    function syncFloatingCart() {
+      const cart = getCart();
+      const totalCount = cart.reduce((acc, item) => acc + (item.quantity || 1), 0);
+      const totalPrice = cart.reduce((acc, item) => acc + (item.totalItemPrice || (item.basePrice * item.quantity)), 0);
+
+      const bar = document.getElementById('stickyCartBar');
+      const badge = document.getElementById('floatingCartBadge');
+      const total = document.getElementById('floatingCartTotal');
+
+      if (totalCount > 0) {
+        badge.textContent = totalCount;
+        total.textContent = 'R$ ' + totalPrice.toFixed(2).replace('.', ',');
+        bar.classList.remove('translate-y-24', 'opacity-0');
+        bar.classList.add('translate-y-0', 'opacity-100');
+      } else {
+        bar.classList.remove('translate-y-0', 'opacity-100');
+        bar.classList.add('translate-y-24', 'opacity-0');
+      }
+    }
+
+    // Modal Interaction Handlers
+    window.openProductModal = function(name, basePrice, description) {
+      currentItem = {
+        name: name,
+        basePrice: parseFloat(basePrice),
+        description: description,
+        quantity: 1
+      };
+
+      document.getElementById('modalItemTitle').textContent = name;
+      document.getElementById('modalItemDesc').textContent = description;
+      document.getElementById('modalQuantity').textContent = '1';
+      document.getElementById('orderNotes').value = '';
+
+      // Uncheck all addons
+      document.querySelectorAll('.addon-checkbox').forEach(cb => {
+        cb.checked = false;
+      });
+
+      updateModalTotal();
+
+      const modal = document.getElementById('productModal');
+      const container = document.getElementById('modalContainer');
+      modal.classList.remove('pointer-events-none', 'opacity-0');
+      modal.classList.add('opacity-100');
+      container.classList.remove('translate-y-full');
+      container.classList.add('translate-y-0');
+    };
+
+    window.closeProductModal = function() {
+      const modal = document.getElementById('productModal');
+      const container = document.getElementById('modalContainer');
+      container.classList.remove('translate-y-0');
+      container.classList.add('translate-y-full');
+      modal.classList.remove('opacity-100');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+    };
+
+    window.increaseQuantity = function() {
+      currentItem.quantity++;
+      document.getElementById('modalQuantity').textContent = currentItem.quantity;
+      updateModalTotal();
+    };
+
+    window.decreaseQuantity = function() {
+      if (currentItem.quantity > 1) {
+        currentItem.quantity--;
+        document.getElementById('modalQuantity').textContent = currentItem.quantity;
+        updateModalTotal();
+      }
+    };
+
+    window.updateModalTotal = function() {
+      let addonsSum = 0;
+      document.querySelectorAll('.addon-checkbox:checked').forEach(cb => {
+        addonsSum += parseFloat(cb.getAttribute('data-price') || 0);
+      });
+
+      const singleItemPrice = currentItem.basePrice + addonsSum;
+      const finalPrice = singleItemPrice * currentItem.quantity;
+
+      document.getElementById('modalFinalPriceText').textContent = 'R$ ' + finalPrice.toFixed(2).replace('.', ',');
+    };
+
+    window.confirmAddToCart = function() {
+      const selectedAddons = [];
+      let addonsSum = 0;
+      document.querySelectorAll('.addon-checkbox:checked').forEach(cb => {
+        const p = parseFloat(cb.getAttribute('data-price') || 0);
+        addonsSum += p;
+        selectedAddons.push({
+          name: cb.getAttribute('data-name'),
+          price: p
+        });
+      });
+
+      const notes = document.getElementById('orderNotes').value.trim();
+      const singleItemPrice = currentItem.basePrice + addonsSum;
+      const totalItemPrice = singleItemPrice * currentItem.quantity;
+
+      const cartItem = {
+        id: Date.now() + Math.random().toString(36).substr(2, 5),
+        name: currentItem.name,
+        basePrice: currentItem.basePrice,
+        quantity: currentItem.quantity,
+        addons: selectedAddons,
+        notes: notes,
+        singleItemPrice: singleItemPrice,
+        totalItemPrice: totalItemPrice
+      };
+
+      const cart = getCart();
+      cart.push(cartItem);
+      saveCart(cart);
+
+      closeProductModal();
+    };
+
+    // Category Tabs Filtering
+    const tabs = document.querySelectorAll('.category-btn');
+    const cards = document.querySelectorAll('.product-card');
+    const title = document.getElementById('currentSectionTitle');
+    const countLabel = document.getElementById('itemCountLabel');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', function() {
+        tabs.forEach(t => {
+          t.classList.remove('bg-primary', 'text-surface', 'shadow-sm');
+          t.classList.add('bg-surface-container-high', 'text-primary');
+        });
+        this.classList.remove('bg-surface-container-high', 'text-primary');
+        this.classList.add('bg-primary', 'text-surface', 'shadow-sm');
+
+        const cat = this.getAttribute('data-cat');
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const itemCat = card.getAttribute('data-cat');
+          if (cat === 'todos' || itemCat === cat) {
+            card.style.display = 'flex';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Update Section Title & count
+        const labels = {
+          'todos': 'Mais Pedidos & Novidades',
+          'classicos': 'Churros Tradicionais & Recheados',
+          'especiais': 'Churros Especiais Gourmet',
+          'combos': 'Combos & Caixinhas Festivas',
+          'bebidas': 'Bebidas & Chocolates Quentes'
+        };
+        title.textContent = labels[cat] || 'Nosso Cardápio';
+        countLabel.textContent = visibleCount + ' opções artesanais';
+      });
+    });
+
+    // Close modal on click outside backdrop
+    document.getElementById('productModal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeProductModal();
+      }
+    });
+
+    // Initialize cart state
+    syncFloatingCart();
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(90,56,37,0.08)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-gutter-mobile"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant transition-colors" data-path="cardapio" href="#"><span class="material-symbols-outlined text-[24px]">menu_book</span><span class="font-label-sm text-label-sm">Cardápio</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant transition-colors relative" data-path="carrinho" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="absolute -top-1 -right-2 min-w-[16px] h-4 px-1 bg-secondary text-on-secondary rounded-full font-label-sm text-[9px] flex items-center justify-center">2</span></div><span class="font-label-sm text-label-sm">Carrinho</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant transition-colors" data-path="pedidos-ajuda" href="#"><span class="material-symbols-outlined text-[24px]">support_agent</span><span class="font-label-sm text-label-sm">Pedidos</span></a></div></nav></body></html>
