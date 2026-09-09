@@ -1,0 +1,146 @@
+{
+  "store": {
+    "name": "Chicharitos Artisanal Churros",
+    "currency": "BRL",
+    "whatsapp": "+5511942142986"
+  },
+  "categories": [
+    {
+      "id": "churros-classicos",
+      "name": "Churros Clássicos",
+      "products": [
+        {
+          "id": "ch-classico",
+          "name": "Churro Clássico",
+          "description": "Churro tradicional com açúcar e canela crocante por fora e macio por dentro.",
+          "basePrice": 6.0,
+          "image": "assets/img/churro-classico.jpg"
+        },
+        {
+          "id": "ch-doce-leite",
+          "name": "Churro de Doce de Leite",
+          "description": "Recheado generosamente com doce de leite caseiro cremoso.",
+          "basePrice": 8.0,
+          "image": "assets/img/churro-doce-de-leite.jpg"
+        },
+        {
+          "id": "ch-chocolate",
+          "name": "Churro de Chocolate",
+          "description": "Recheado com premiado chocolate ao leite e calda aveludada.",
+          "basePrice": 8.0,
+          "image": "assets/img/churro-chocolate.jpg"
+        },
+        {
+          "id": "ch-romeu-julieta",
+          "name": "Romeu e Julieta",
+          "description": "Recheio agridoce artesanal de queijo minas com goiabada.",
+          "basePrice": 9.0,
+          "image": "assets/img/churro-romeu-julieta.jpg"
+        }
+      ]
+    },
+    {
+      "id": "churros-especiais",
+      "name": "Churros Especiais",
+      "products": [
+        {
+          "id": "ch-nutella",
+          "name": "Churro de Nutella",
+          "description": "Recheado e coberto com Nutella original e avelãs tostadas.",
+          "basePrice": 12.0,
+          "image": "assets/img/churro-nutella.jpg"
+        },
+        {
+          "id": "ch-oreo",
+          "name": "Churro Oreo",
+          "description": "Recheado com creme de Oreo e pedaços crocantes de biscoito.",
+          "basePrice": 11.0,
+          "image": "assets/img/churro-oreo.jpg"
+        },
+        {
+          "id": "ch-kitkat",
+          "name": "Churro KitKat",
+          "description": "Chocolate KitKat cremoso com pedaços de wafer crocante.",
+          "basePrice": 12.0,
+          "image": "assets/img/churro-kitkat.jpg"
+        },
+        {
+          "id": "ch-prestigio",
+          "name": "Churro Prestígio",
+          "description": "Combinação irresistível de chocolate com recheio cremoso de coco.",
+          "basePrice": 10.0,
+          "image": "assets/img/churro-prestigio.jpg"
+        }
+      ]
+    },
+    {
+      "id": "combos",
+      "name": "Combos",
+      "products": [
+        {
+          "id": "combo-casal",
+          "name": "Combo Casal",
+          "description": "4 churros clássicos + 2 especiais à escolha para compartilhar.",
+          "basePrice": 32.0,
+          "image": "assets/img/combo-casal.jpg"
+        },
+        {
+          "id": "combo-familia",
+          "name": "Combo Família",
+          "description": "6 churros clássicos + 4 especiais à escolha para a família toda.",
+          "basePrice": 55.0,
+          "image": "assets/img/combo-familia.jpg"
+        },
+        {
+          "id": "combo-mini",
+          "name": "Combo Mini (10 un.)",
+          "description": "10 mini churros tradicionais polvilhados com açúcar e canela.",
+          "basePrice": 20.0,
+          "image": "assets/img/combo-mini.jpg"
+        }
+      ]
+    },
+    {
+      "id": "bebidas",
+      "name": "Bebidas",
+      "products": [
+        {
+          "id": "beb-agua",
+          "name": "Água Mineral",
+          "description": "Garrafa de 500ml, puríssima e gelada sem gás.",
+          "basePrice": 4.0,
+          "image": "assets/img/agua.jpg"
+        },
+        {
+          "id": "beb-refrigerante",
+          "name": "Refrigerante Lata",
+          "description": "Lata de 350ml — Coca-Cola, Guaraná Antarctica ou Fanta.",
+          "basePrice": 6.0,
+          "image": "assets/img/refrigerante.jpg"
+        },
+        {
+          "id": "beb-suco",
+          "name": "Suco Natural",
+          "description": "Suco fresco e gelado de 500ml — Laranja ou Maracujá.",
+          "basePrice": 9.0,
+          "image": "assets/img/suco.jpg"
+        },
+        {
+          "id": "beb-cafe",
+          "name": "Café Expresso",
+          "description": "Café gourmet moído na hora, perfeito para acompanhar seus churros.",
+          "basePrice": 5.0,
+          "image": "assets/img/cafe.jpg"
+        }
+      ]
+    }
+  ],
+  "optionals": [
+    { "id": "op-morango", "name": "Morango Fresco", "price": 2.0 },
+    { "id": "op-granulado", "name": "Granulado Crocante", "price": 1.0 },
+    { "id": "op-pacoca", "name": "Farofa de Paçoca", "price": 1.5 },
+    { "id": "op-chantilly", "name": "Chantilly Cremoso", "price": 2.0 },
+    { "id": "op-leite-condensado", "name": "Leite Ninho em Pó", "price": 2.5 },
+    { "id": "op-nutella-extra", "name": "Dose Extra de Nutella", "price": 4.0 }
+  ]
+}
